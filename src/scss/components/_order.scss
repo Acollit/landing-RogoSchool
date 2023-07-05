@@ -1,0 +1,70 @@
+.order {
+  padding: 87px 0;
+  background-color: var(--accent-color);
+  background-image: url(../img/order-bg.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  @include mobile {
+    background-image: none;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__left {
+    grid-column: 5 span;
+    padding-left: 60px;
+
+    @include high-tablet {
+      grid-column: 12 span;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    color: var(--light-color);
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--light-color);
+
+    @include mobile {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+    grid-column: 7 span;
+
+    @include high-tablet {
+      justify-content: flex-start;
+      grid-column: 12 span;
+      padding-right: 0;
+    }
+  }
+
+  &__form {
+    max-width: 500px;
+  }
+}

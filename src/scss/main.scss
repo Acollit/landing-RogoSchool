@@ -1,0 +1,22 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/btn";
+@import "./components/nav";
+@import "./components/header";
+@import "./components/form";
+@import "./components/burger";
+@import "./components/modals";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/benefits";
+@import "./components/tooltip";
+@import "./components/trainers";
+@import "./components/tariffs";
+@import "./components/order";
+@import "./components/footer";
+@import "./components/popup";
